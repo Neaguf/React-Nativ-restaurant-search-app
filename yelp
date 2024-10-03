@@ -1,0 +1,33 @@
+Yelp API Info and Workarounds
+In the upcoming lecture, we will sign up for a Yelp developer account. As of March 2024, Yelp has paywalled its API. Additionally, they have moved the price endpoints into a premium tier:
+
+https://docs.developer.yelp.com/page/start-your-free-trial
+
+So, you can register for a free trial to get the API key, however, you will not have access to the pricing endpoints used in the course.
+
+We would recommend using our personal API key which still returns all of the paywalled endpoints (for now):
+
+a3h4JLwYlgt9vcKpeAeR-UrYkAmMZyYSpyHan-xy8UMocvzRAQGu_LeevTREL11Vg8Znup2gmrrtb3YE0MKnRB5lHxRuXqkJMM58KMsTEcEb4CQeX91zPtJQ40zqZnYx
+
+Note - due to persistent abuse and usage by bots, this key is regularly rotated.
+
+If you wish to use your own API key and free tier Yelp account, then, we have provided a solution to add dummy pricing data in this thread here (scroll past the video to see the featured question/response):
+
+https://www.udemy.com/course/the-complete-react-native-and-redux-course/learn/lecture/15706772#questions/21539936
+
+Yelp Registration Issues
+Depending on your location, some students may be blocked from creating an account. There are a few things you can try.
+
+Students noted a workaround in this thread using their phone which will show a captcha:
+
+https://www.udemy.com/course/the-complete-react-native-and-redux-course/learn/lecture/15707036#questions/8334522
+
+Using a VPN for registration and making API calls should also work. Students mentioned they were able to successfully sign up for an API key using the Opera Browser's built-in VPN feature. Other students mentioned that they were able to use Tunnelbear's free tier.
+
+Lastly, you can try just using my key:
+
+a3h4JLwYlgt9vcKpeAeR-UrYkAmMZyYSpyHan-xy8UMocvzRAQGu_LeevTREL11Vg8Znup2gmrrtb3YE0MKnRB5lHxRuXqkJMM58KMsTEcEb4CQeX91zPtJQ40zqZnYx
+
+Note - due to persistent abuse and usage by bots, this key is regularly rotated.
+
+Note - If some students try to use this in production or abuse the key in some way, you will start getting 429 errors (too many requests). There is a strict 5000 call per day quota - please only use this key for this course and to complete this project.
