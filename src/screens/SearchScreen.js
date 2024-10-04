@@ -1,24 +1,35 @@
-import React, { useState, useEffect } from "react";
-import { View, Text, StyleSheet } from "react-native";
+import React, { useState } from "react";
+import { View, Text, StyleSheet,ScrollView } from "react-native";
 import SearchBar from "./components/SearchBar";
-import yelp from "../api/yelp";
 import useRestaurants from "../hooks/useRestaurants";
+import ResultsList from "../screens/components/ResultsList";
 
 
 
 const SearchScreen = () => {
     const [term, setTerm] = useState('');
-    const [searchApi, result, errorMessage] = useRestaurants();
+    const [searchApi, results, errorMessage] = useRestaurants();
+
+const filterResultsByPrice = (price) => {
+    return results.filter(results => {
+        return results.price === price;
+    });
+}
 
 
-    return <View>
+    return <View style={{flex:1}}>
         <SearchBar
             term={term}
             onTermChange={setTerm}
             onTermSubmit={() => searchApi(term)}
         />
         {errorMessage ? <Text>{errorMessage}</Text> : null}
-        <Text> Result Found:{result.length}</Text>
+        <Text> Result Found:{results.length}</Text>
+        <ScrollView>
+        <ResultsList results={filterResultsByPrice('$')} title="Cost Effective"/>
+        <ResultsList results={filterResultsByPrice('$$')} title="Bit Pricer"/>
+        <ResultsList results={filterResultsByPrice('$$$')} title="Big Spender"/>
+        </ScrollView>
     </View>
 };
 
