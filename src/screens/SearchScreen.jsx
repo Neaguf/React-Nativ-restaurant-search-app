@@ -25,7 +25,6 @@ const filterResultsByPrice = (price) => {
             onTermSubmit={() => searchApi(term)}
         />
         {errorMessage ? <Text>{errorMessage}</Text> : null}
-        <Text> Result Found:{results.length}</Text>
         <ScrollView>
         <ResultsList results={filterResultsByPrice('$')} title="Cost Effective"/>
         <ResultsList results={filterResultsByPrice('$$')} title="Bit Pricer"/>
