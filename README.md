@@ -2,6 +2,8 @@
 
 This is a React Native application that displays a list of results fetched from an API (e.g., Yelp). The app showcases a reusable component to present detailed information about each result, including images, names, ratings, and review counts.
 
+This project marks the beginning of my journey in learning React Native. Here, you can find what I have worked on so far. I might return later to add more features as I learn new concepts and skills.
+
 ## Features
 
 - Display a list of results fetched from the API.
@@ -36,7 +38,7 @@ This is a React Native application that displays a list of results fetched from 
 
 ## Code Structure
 
-- `ResultsList.js`: A component that displays a horizontal list of results.
+- `ResultsList.js`: A component displaying a horizontal results list.
 - `ResultsDetail.js`: A reusable component to show detailed information about a single result.
 - `ResultsShowScreen.js`: Screen component to display more detailed information and images of a selected result.
 - `yelp.js`: A file that handles API requests to fetch results.
@@ -48,11 +50,8 @@ This is a React Native application that displays a list of results fetched from 
 
 ## Contributing
 
-Contributions are welcome! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
+Contributions are welcome! Feel free to open an issue or submit a pull request if you have suggestions or improvements.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
