@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet,ScrollView } from "react-native";
-import SearchBar from "./components/SearchBar";
+import SearchBar from "../components/SearchBar"
 import useRestaurants from "../hooks/useRestaurants";
-import ResultsList from "../screens/components/ResultsList";
+import ResultsList from "../components/ResultsList"
+
 
 
 
